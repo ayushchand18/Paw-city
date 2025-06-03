@@ -1,0 +1,142 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fffdf5;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff9f68;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #2b2b2b;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #ffb88c, #ffcba4);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cta.primary {
+  background-color: #fff;
+  color: #ff7f3f;
+}
+
+.cta.secondary {
+  background-color: #333;
+  color: #fff;
+}
+
+.cta:hover {
+  transform: scale(1.1);
+}
+
+.volunteer-form-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #fff9f2;
+}
+
+.volunteer-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.volunteer-form input, .volunteer-form select {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.volunteer-form button {
+  background-color: #ff9f68;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.volunteer-form button:hover {
+  background-color: #ff7f3f;
+}
+
+.impact-stories {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.story-placeholder p {
+  margin: 1rem auto;
+  background: #fff3e6;
+  max-width: 600px;
+  padding: 1rem;
+  border-left: 5px solid #ff9f68;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #ff9f68;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
